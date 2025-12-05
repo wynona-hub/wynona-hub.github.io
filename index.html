@@ -1,0 +1,350 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Blossom Bags</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-row">
+      <a class="brand" href="#">Blossom Bags</a>
+
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#bags">Bags</a>
+        <a href="#accessories">Bag Accessories</a>
+        <a href="#sale">Sale</a>
+        <a href="#about">About</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="favoritesBtn" aria-label="Favorites">
+          ♥ <span class="badge" id="favCount">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Shopping cart">
+          🛒 <span class="badge" id="cartCount">0</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero"><!--Refers to the main section-->
+      <div class="container hero-grid"><!--container often sets layout boundaries, like max-width and padding.hero-grid likely defines a grid layout for the hero section-->
+        <div class="hero-text"><!--the text in the hero class-->
+          <h1>Carry beauty. Live boldly.</h1>
+          <p>Discover everyday bags and accessories that match your life and your style.</p>
+          <div class="hero-cta"><!--call-to-action area of the hero section. It groups together buttons or links that prompt the user to take action—like shopping or browsing.-->
+            <a class="btn gradient" href="#bags">Shop Bags</a>
+            <a class="btn outline hover-scale" href="#accessories">Browse Bag Accessories</a>
+          </div> 
+        </div>
+        <div class="hero-image" aria-hidden="true"><!--image for that section- This tells screen readers to ignore this element. It's used when the content is decorative and not essential for accessibility.-->
+            <img src="Photo collection/blue bag.avif" class="slide active" alt="Featured item 1">
+            <img src="Photo collection/pink bag.jpg" class="slide" alt="Featured item 2">
+            <img src="Photo collection/yellow bag.jpg" class="slide" alt="Featured item 4">
+            <img src="Photo collection/red bag.jpg" class="slide" alt="Featured item 3">
+
+          <div class="mock-phone">Featured</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="bags" class="products container">
+      <h2 class="section-title">Bags</h2>
+      <p class="section-sub">Trendy bags made to fit your day—your way.</p>
+
+      <div class="product-grid" id="productGrid">
+        <!-- Example product card (repeat or clone in your workflow) -->
+        <article class="product-card" data-id="bag-1">
+          <div class="product-media">
+            <img src="Photo collection/5 set colorful.jpg" alt="Five colorful handbags arranged in a row on a light background">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">5 set bag</h3>
+            <p class="product-desc">A complete set of five stylish handbags, each in a different vibrant color. Perfect for matching any outfit, season, or occasion. Durable, spacious, and designed for everyday elegance.</p>
+            <div class="product-foot">
+              <div class="price">$150</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bag-2">
+          <div class="product-media">
+            <img src="Photo collection/colourful bag.jpg" alt="Multicoloured Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Colourful Bag</h3>
+            <p class="product-desc">A bright and multicoloured handbag that adds personality to any look. Lightweight, durable, and ideal for casual outings or weekend wear.</p>
+            <div class="product-foot">
+              <div class="price">$90</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="accessory-1">
+          <div class="product-media">
+            <img src="Photo collection/Wallet1.jpg" alt="Rose coloured Wallet">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Wallet</h3>
+            <p class="product-desc">A rose-coloured wallet with a sleek, modern finish. Includes multiple compartments for cards, cash, and coins, all in a compact and stylish design.</p>
+            <div class="product-foot">
+              <div class="price">$30</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="product-card" data-id="bag-3">
+          <div class="product-media">
+            <img src="Photo collection/black bag.jpg" alt="Black Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Black Handbag</h3>
+            <p class="product-desc">A classic black leather handbag that pairs effortlessly with any outfit. Structured, elegant, and spacious—perfect for work, errands, or evenings out.</p>
+            <div class="product-foot">
+              <div class="price">$65</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="product-card" data-id="bag-4">
+          <div class="product-media">
+            <img src="Photo collection/blue bag.avif" alt="Blue bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Blue handbag</h3>
+            <p class="product-desc">A bold blue leather bag that stands out with its vibrant color and smooth finish. Great for everyday use with enough room for your essentials.</p>
+            <div class="product-foot">
+              <div class="price">$72</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="product-card" data-id="bag-5">
+          <div class="product-media">
+            <img src="Photo collection/Brown bag.jpg" alt="Brown Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Brown Handbag</h3>
+            <p class="product-desc">A soft brown leather handbag with a warm, timeless look. Versatile, durable, and designed for both casual and professional settings.</p>
+            <div class="product-foot">
+              <div class="price">$75</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="product-card" data-id="bag-6">
+          <div class="product-media">
+            <img src="Photo collection/green bag.avif" alt="Green Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Green Bag</h3>
+            <p class="product-desc">A fresh green leather bag with a clean, modern design. Lightweight yet spacious—ideal for daily errands or workdays.</p>
+            <div class="product-foot">
+              <div class="price">$65</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+        <article class="product-card" data-id="bag-7">
+          <div class="product-media">
+            <img src="Photo collection/red bag.jpg" alt="Red Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Red Handbag</h3>
+            <p class="product-desc">A stunning red handbag that adds a pop of color to any outfit. Structured, stylish, and perfect for making a bold fashion statement.</p>
+            <div class="product-foot">
+              <div class="price">$80</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        
+        <article class="product-card" data-id="bag-8">
+          <div class="product-media">
+            <img src="Photo collection/suitcase.jpg" alt="Yellow-coloured Suitcase">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Suitcase</h3>
+            <p class="product-desc">A bright yellow hard-shell suitcase designed for strength and easy travel. Features smooth-rolling wheels, a sturdy handle, and roomy interior space—perfect for vacations or weekend trips.</p>
+            <div class="product-foot">
+              <div class="price">$375</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bag-9">
+          <div class="product-media">
+            <img src="Photo collection/sports bag.jpg" alt="Sports Bag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Sports bag</h3>
+            <p class="product-desc">A black, durable gym and sports bag built for everyday use. Lightweight, spacious, and ideal for workouts, travel, or carrying athletic gear.</p>
+            <div class="product-foot">
+              <div class="price">$115</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bag-10">
+          <div class="product-media">
+            <img src="Photo collection/yellow bag.jpg" alt="Yellow handbag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Yellow bag</h3>
+            <p class="product-desc">A compact mini handbag in a warm yellow tone. Stylish, lightweight, and perfect for carrying your small essentials on casual outings.</p>
+            <div class="product-foot">
+              <div class="price">$50</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="product-card" data-id="bag-11">
+          <div class="product-media">
+            <img src="Photo collection/pink bag.jpg" alt="Pink handbag">
+            <button class="fav-toggle" title="Add to favorites" aria-pressed="false">♡</button>
+          </div>
+          <div class="product-body">
+            <h3 class="product-title">Pink bag</h3>
+            <p class="product-desc">A chic pink leather handbag with a classic shape. Bold, feminine, and spacious enough for daily essentials—great for work or everyday wear.</p>
+            <div class="product-foot">
+              <div class="price">$75</div>
+              <div class="controls">
+                <button class="btn small add-to-cart" title="Add to cart" aria-pressed="false">Add</button>
+                <button class="btn small ghost">View</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        
+
+        <!-- add more cards as needed -->
+      </div>
+    </section>
+
+    <section id="accessories" class="container">
+      <h2 class="section-title">Accessories</h2>
+      <p class="section-sub">Accessories that add personality and polish to every bag you carry</p>
+      <div class="mini-grid">
+        <div class="card">Key Chains</div>
+        <div class="card">Bag Charms</div>
+        <div class="card">Wallets</div>
+      </div>
+    </section>
+
+    <section id="sale" class="container">
+      <h2 class="section-title">Black Friday Sale</h2>
+      <p class="section-sub">Limited-time Black Friday offers.</p>
+      <div class="promo">
+        <div class="promo-left">Enjoy 25% off all items</div>
+        <div class="promo-right"><a class="btn gradient small" href="#bags">Shop Black Friday</a></div>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <h2 class="section-title">About</h2>
+      <p class="section-sub">We offer quality bags, wallets, accessories, and suitcases designed to keep you organized and confident wherever you go.</p>
+    </section>
+  </main>
+
+  <aside class="cart-panel" id="cartPanel" aria-hidden="true">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="closeCart" class="icon-btn">✕</button>
+    </div>
+    <div id="cartItems" class="cart-items">
+      <p class="muted">Your cart is empty.</p>
+    </div>
+    <div class="cart-footer">
+      <div class="total">Total: <strong id="cartTotal">$0</strong></div>
+      <button class="btn gradient" id="checkoutBtn">Checkout</button>
+    </div>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div>© <strong>Blossom Bags</strong> 2025</div>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a href="#privacy">Privacy</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    let slides = document.querySelectorAll('.slide');
+    let current = 0;
+  
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 3000);
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>
